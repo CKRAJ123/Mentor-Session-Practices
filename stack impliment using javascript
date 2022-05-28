@@ -1,0 +1,28 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+    
+let arr=[];
+function push(value)
+{
+    return arr.push(value);
+}
+function pop(){
+    if(arr.length==0)
+    return "underflow"
+    return arr.pop();
+}
+function peek(){
+    if(arr.length>0)
+    return arr[arr.length-1];
+    else{
+        return "underflow";
+    }
+}
+push(20);
+push(10);
+console.log(pop());
+push(30);
+console.log(peek());
+push(40);
+for(let i=0;i<arr.length;i++)
+console.log(arr[i]);
