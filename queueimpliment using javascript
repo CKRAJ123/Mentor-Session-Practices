@@ -1,0 +1,25 @@
+let arr=[];
+function push(value)
+{
+    return arr.push(value);
+}
+function pop(){
+    if(arr.length==0)
+    return "underflow"
+    return arr.shift();
+}
+function front(){
+    if(arr.length>0)
+    return arr[0];
+    else{
+        return "underflow";
+    }
+}
+push(20);
+push(10);
+pop();
+push(30);
+console.log(front());
+push(40);
+for(let i=0;i<arr.length;i++)
+console.log(arr[i]);
